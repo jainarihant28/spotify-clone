@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign up page for the DevCamp 2.0 Spotify clone — built with semantic HTML forms and pure CSS.">
+  <title>Spotify Clone | Sign up free</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <span>Spotify</span>
+      </a>
+
+      <form class="nav-search" action="#" method="get" role="search">
+        <label class="visually-hidden" for="site-search">Search for songs, artists or podcasts</label>
+        <input type="search" id="site-search" name="q" placeholder="What do you want to play?" required>
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+        <li><a href="index.html#premium">Premium</a></li>
+        <li><a href="index.html#support">Support</a></li>
+        <li><a href="index.html#download">Download</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="index.html">Home</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         REQUIRED <form> WITH <input> ELEMENTS (bonus 4th page)
+         ============================================================ -->
+    <div class="form-page">
+
+      <section class="form-card" aria-labelledby="signup-heading">
+        <!-- ID selector target (unique to this page) -->
+        <h1 id="signup-heading">Sign up free</h1>
+        <p class="form-intro">Millions of songs and podcasts. No credit card required.</p>
+
+        <form action="#" method="post">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Kaya" required>
+            </div>
+
+            <div class="field">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Lin" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <span class="hint">We will never share your email with anyone else.</span>
+          </div>
+
+          <div class="field">
+            <label for="password">Create a password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="At least 8 characters" minlength="8" required>
+            <span class="hint">Use 8 or more characters with a mix of letters and numbers.</span>
+          </div>
+
+          <div class="field">
+            <label for="birthday">Date of birth</label>
+            <input type="date" id="birthday" name="birthday" required>
+          </div>
+
+          <div class="field">
+            <fieldset class="choice-group">
+              <legend class="visually-hidden">Choose a plan</legend>
+
+              <label class="choice">
+                <input type="radio" name="plan" value="free" checked>
+                Free
+              </label>
+
+              <label class="choice">
+                <input type="radio" name="plan" value="premium-individual">
+                Premium
+              </label>
+
+              <label class="choice">
+                <input type="radio" name="plan" value="premium-student">
+                Student
+              </label>
+            </fieldset>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>I agree to the Terms of Service and Privacy Policy of this DevCamp learning project.</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Sign up free</button>
+
+        </form>
+
+        <p class="form-footer-note">
+          Already have an account? <a href="index.html">Log in</a>
+        </p>
+      </section>
+
+      <!-- Side panel: pure CSS, hidden on small screens -->
+      <aside class="form-side" aria-label="Benefits">
+        <h2>Why people choose us</h2>
+        <ul class="feature-list">
+          <li>Ad-free music and podcasts</li>
+          <li>Download and listen offline</li>
+          <li>Play any song, on any device</li>
+          <li>Unlimited skips, no interruptions</li>
+          <li>Curated playlists updated weekly</li>
+        </ul>
+
+        <div class="stats-strip">
+          <div class="stat"><strong>4</strong><span>Pages</span></div>
+          <div class="stat"><strong>0</strong><span>JS</span></div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <p>A DevCamp 2.0 learning project. Built with HTML5 &amp; CSS3 only.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">For the Record</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="playlist.html">Playlist</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Download</h4>
+        <ul>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">Desktop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Spotify Clone &mdash; a student project for DevCamp 2.0. Not affiliated with Spotify AB.</p>
+      <p><a href="index.html">Home</a> &middot; <a href="browse.html">Browse</a> &middot; <a href="playlist.html">Playlist</a> &middot; <a href="signup.html">Sign up</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all genres on the DevCamp 2.0 Spotify clone — Pop, Hip-Hop, Chill, Workout and more.">
+  <title>Spotify Clone | Browse</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR — identical markup on every page
+       ============================================================ -->
+  <header id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <span>Spotify</span>
+      </a>
+
+      <form class="nav-search" action="#" method="get" role="search">
+        <label class="visually-hidden" for="site-search">Search for songs, artists or podcasts</label>
+        <input type="search" id="site-search" name="q" placeholder="What do you want to play?" required>
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html" class="active">Browse</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+        <li><a href="#premium">Premium</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="signup.html">Sign up free</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- ---------- PAGE HEADING ---------- -->
+      <section class="page-heading" aria-labelledby="browse-heading">
+        <!-- ID selector target (unique to this page) -->
+        <h1 id="browse-heading">Browse all</h1>
+        <p>Pick a mood, a genre or a moment. Every card below opens the Playlist Details page.</p>
+
+        <!-- Filter chips (visual only — pure CSS) -->
+        <nav class="filter-row" aria-label="Genre filters">
+          <a class="filter-chip active" href="#genres">All</a>
+          <a class="filter-chip" href="#genres">Music</a>
+          <a class="filter-chip" href="#genres">Podcasts</a>
+          <a class="filter-chip" href="#genres">Live Events</a>
+          <a class="filter-chip" href="#genres">New Releases</a>
+        </nav>
+      </section>
+
+      <!-- ---------- GENRE CARD GRID (Flexbox) ---------- -->
+      <section id="genres" aria-labelledby="genres-heading">
+        <div class="section-heading">
+          <h2 id="genres-heading">Genres &amp; moods</h2>
+          <span class="section-note">6 categories</span>
+        </div>
+
+        <!-- .genre-grid is a wrapping flex container: each card is an <a> -->
+        <div class="genre-grid">
+
+          <a class="genre-card bg-red" href="playlist.html">
+            <h3>Pop</h3>
+            <p>The biggest hooks of the moment.</p>
+            <span class="genre-count">120 playlists</span>
+            <img src="images/cover-pop.jpg"
+                 alt="Pop genre artwork: glossy magenta and pink shapes on a coral gradient">
+          </a>
+
+          <a class="genre-card bg-amber" href="playlist.html">
+            <h3>Hip-Hop</h3>
+            <p>Bars, beats and heavyweight basslines.</p>
+            <span class="genre-count">86 playlists</span>
+            <img src="images/cover-hiphop.jpg"
+                 alt="Hip-Hop genre artwork: gold spray-paint textures on a dark concrete wall">
+          </a>
+
+          <a class="genre-card bg-blue" href="playlist.html">
+            <h3>Chill</h3>
+            <p>Slow down and let the room breathe.</p>
+            <span class="genre-count">64 playlists</span>
+            <img src="images/cover-chill.jpg"
+                 alt="Chill genre artwork: soft lavender, mint and peach gradient waves">
+          </a>
+
+          <a class="genre-card bg-green" href="playlist.html">
+            <h3>Workout</h3>
+            <p>High-tempo fuel for the last rep.</p>
+            <span class="genre-count">48 playlists</span>
+            <img src="images/cover-workout.jpg"
+                 alt="Workout genre artwork: electric lime motion streaks on a dark background">
+          </a>
+
+          <a class="genre-card bg-purple" href="playlist.html">
+            <h3>Synthwave</h3>
+            <p>Retro arpeggios and neon nights.</p>
+            <span class="genre-count">37 playlists</span>
+            <img src="images/cover-midnight.jpg"
+                 alt="Synthwave genre artwork: neon light trails beneath a deep violet sky">
+          </a>
+
+          <a class="genre-card bg-teal" href="playlist.html">
+            <h3>Indie</h3>
+            <p>Fresh finds from artists you will love.</p>
+            <span class="genre-count">52 playlists</span>
+            <img src="images/cover-indie.jpg"
+                 alt="Indie genre artwork: burnt orange and forest green colour blocks with print texture">
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ---------- SECOND ROW: mood playlists ---------- -->
+      <section aria-labelledby="moods-heading">
+        <div class="section-heading">
+          <h2 id="moods-heading">Made for the moment</h2>
+          <a class="section-note" href="playlist.html">Open playlist &rarr;</a>
+        </div>
+
+        <div class="cards-row">
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-lofi.jpg"
+                     alt="Lo-Fi Study Beats cover: warm brown and cream gradient with vinyl textures">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Focus Flow</a></h3>
+            <p class="card-meta">Instrumental &middot; 3 h 12 m</p>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-acoustic.jpg"
+                     alt="Acoustic Sunrise cover: golden amber sunrise gradient with soft lens flare">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Morning Acoustic</a></h3>
+            <p class="card-meta">Acoustic &middot; 1 h 45 m</p>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-workout.jpg"
+                     alt="Power Hour cover: electric lime motion streaks on a dark background">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Power Hour</a></h3>
+            <p class="card-meta">Beast Mode &middot; 58 m</p>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-chill.jpg"
+                     alt="Late Night Chill cover: pastel lavender and mint gradient waves">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Late Night Chill</a></h3>
+            <p class="card-meta">Downtempo &middot; 2 h 05 m</p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <p>A DevCamp 2.0 learning project. Built with HTML5 &amp; CSS3 only.</p>
+      </div>
+
+      <div class="footer-column" id="premium">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">For the Record</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="playlist.html">Playlists</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="download">
+        <h4>Download</h4>
+        <ul>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">Desktop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Spotify Clone &mdash; a student project for DevCamp 2.0. Not affiliated with Spotify AB.</p>
+      <p><a href="index.html">Home</a> &middot; <a href="browse.html">Browse</a> &middot; <a href="playlist.html">Playlist</a> &middot; <a href="signup.html">Sign up</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

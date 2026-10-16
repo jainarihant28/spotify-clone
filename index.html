@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevCamp 2.0 Task 1 — a static Spotify clone built with semantic HTML5 and CSS3 only. Millions of songs. Zero cost.">
+  <title>Spotify Clone | Home</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <!-- External stylesheet shared by all pages (no inline / internal CSS) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR  (semantic <header> + <nav>)
+       ============================================================ -->
+  <header id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <span>Spotify</span>
+      </a>
+
+      <!-- Search form: <form> + <input> used on every page -->
+      <form class="nav-search" action="#" method="get" role="search">
+        <label class="visually-hidden" for="site-search">Search for songs, artists or podcasts</label>
+        <input type="search" id="site-search" name="q" placeholder="What do you want to play?" required>
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+        <li><a href="#premium">Premium</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="signup.html">Sign up free</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main>
+
+    <!-- ---------- HERO SECTION: heading + subtext + CTA ---------- -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-badge">DevCamp 2.0 &middot; Task 1</p>
+
+        <!-- ID selector target: the one unique element on this page -->
+        <h1 id="hero-heading">Music for everyone. <span>Play millions of songs.</span></h1>
+
+        <p class="hero-subtext">
+          A static Spotify clone built with semantic HTML5 and pure CSS3 &mdash;
+          no JavaScript, no frameworks. Just clean structure, Flexbox and the box model.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="signup.html">Sign up free</a>
+          <a class="btn btn-ghost" href="browse.html">Browse all genres</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- ---------- FEATURED PLAYLIST CARDS (Flexbox) ---------- -->
+      <section aria-labelledby="featured-heading">
+        <div class="section-heading">
+          <h2 id="featured-heading">Featured playlists</h2>
+          <a class="section-note" href="browse.html">See all &rarr;</a>
+        </div>
+
+        <!-- .cards-row is a flex container: cards wrap and share space evenly -->
+        <div class="cards-row">
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-midnight.jpg"
+                     alt="Midnight Drive playlist cover: glowing neon pink and cyan light trails under a deep violet night sky">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Midnight Drive</a></h3>
+            <p class="card-meta">Synthwave &middot; 42 songs</p>
+            <span class="card-tag">Trending</span>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-lofi.jpg"
+                     alt="Lo-Fi Study Beats playlist cover: warm dusty brown and cream gradient with soft vinyl record textures">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Lo-Fi Study Beats</a></h3>
+            <p class="card-meta">Lo-Fi &middot; 78 songs</p>
+            <span class="card-tag">Focus</span>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-pop.jpg"
+                     alt="Pop Hits playlist cover: glossy magenta and pink shapes floating over a warm coral gradient">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Pop Hits 2026</a></h3>
+            <p class="card-meta">Pop &middot; 60 songs</p>
+            <span class="card-tag">New</span>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-acoustic.jpg"
+                     alt="Acoustic Sunrise playlist cover: golden amber and rose sunrise gradient with soft lens flare">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Acoustic Sunrise</a></h3>
+            <p class="card-meta">Acoustic &middot; 34 songs</p>
+            <span class="card-tag">Chill</span>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-indie.jpg"
+                     alt="Indie Essentials playlist cover: bold burnt orange and forest green colour blocks with risograph texture">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Indie Essentials</a></h3>
+            <p class="card-meta">Indie &middot; 51 songs</p>
+            <span class="card-tag">Editor's pick</span>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ---------- TWO COLUMN BLOCK: list + stats ---------- -->
+      <section class="home-columns" aria-labelledby="charts-heading">
+
+        <div class="column">
+          <div class="panel">
+            <h3 id="charts-heading">Top artists this week</h3>
+            <!-- Semantic list for ranked data -->
+            <ul class="artist-list">
+              <li><span><span class="rank">1</span>Ava Monroe</span><span class="plays">2.4M plays</span></li>
+              <li><span><span class="rank">2</span>VELVET CODE</span><span class="plays">1.9M plays</span></li>
+              <li><span><span class="rank">3</span>The Midnight Run</span><span class="plays">1.6M plays</span></li>
+              <li><span><span class="rank">4</span>Kaya Lin</span><span class="plays">1.2M plays</span></li>
+              <li><span><span class="rank">5</span>Noah Bennett</span><span class="plays">980K plays</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="panel">
+            <h3>Why this project is interesting</h3>
+            <p class="panel-text">
+              Every page here is hand-built with HTML and CSS only. Layout is handled by
+              Flexbox, colour comes from one shared palette of design tokens, and all links
+              between pages are plain anchor tags.
+            </p>
+
+            <div class="stats-strip">
+              <div class="stat"><strong>4</strong><span>Pages</span></div>
+              <div class="stat"><strong>1</strong><span>CSS file</span></div>
+              <div class="stat"><strong>0</strong><span>JavaScript</span></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       FOOTER  (semantic <footer>) — link columns
+       ============================================================ -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <p>A DevCamp 2.0 learning project. Built with HTML5 &amp; CSS3 only.</p>
+      </div>
+
+      <div class="footer-column" id="premium">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">For the Record</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="playlist.html">Playlists</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="download">
+        <h4>Download</h4>
+        <ul>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">Desktop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Spotify Clone &mdash; a student project for DevCamp 2.0. Not affiliated with Spotify AB.</p>
+      <p><a href="index.html">Home</a> &middot; <a href="browse.html">Browse</a> &middot; <a href="playlist.html">Playlist</a> &middot; <a href="signup.html">Sign up</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

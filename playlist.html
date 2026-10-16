@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Playlist details page of the DevCamp 2.0 Spotify clone — Midnight Drive, with full track listing.">
+  <title>Spotify Clone | Midnight Drive — Playlist</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <span>Spotify</span>
+      </a>
+
+      <form class="nav-search" action="#" method="get" role="search">
+        <label class="visually-hidden" for="site-search">Search for songs, artists or podcasts</label>
+        <input type="search" id="site-search" name="q" placeholder="What do you want to play?" required>
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="playlist.html" class="active">Playlist</a></li>
+        <li><a href="#premium">Premium</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="signup.html">Sign up free</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- ---------- PLAYLIST HERO: cover + title + description ---------- -->
+      <section class="playlist-hero" aria-labelledby="playlist-title">
+
+        <img class="playlist-cover" src="images/cover-midnight.jpg"
+             alt="Midnight Drive playlist cover: glowing pink and cyan light trails receding beneath a deep violet night sky">
+
+        <div class="playlist-info">
+          <p class="playlist-kind">Public playlist</p>
+
+          <!-- ID selector target (unique to this page) -->
+          <h1 id="playlist-title">Midnight Drive</h1>
+
+          <p class="playlist-description">
+            Synth-heavy night drives, glowing highways and a skyline that never quite ends.
+            Ten tracks hand-picked for the long way home &mdash; best played after 11 PM with
+            the windows down.
+          </p>
+
+          <div class="playlist-stats">
+            <span><strong>Spotify Clone</strong></span>
+            <span class="dot">&bull;</span>
+            <span>10 songs</span>
+            <span class="dot">&bull;</span>
+            <span>40 min 19 sec</span>
+          </div>
+
+          <nav class="filter-row" aria-label="Playlist tags">
+            <a class="filter-chip active" href="browse.html">Synthwave</a>
+            <a class="filter-chip" href="browse.html">Chill</a>
+            <a class="filter-chip" href="browse.html">Night</a>
+          </nav>
+        </div>
+
+      </section>
+
+      <!-- ---------- ACTION BAR: styled Play button ---------- -->
+      <div class="action-bar">
+        <!-- Play button is styled but intentionally does nothing (CSS only) -->
+        <button class="play-btn" type="button">
+          <span class="play-triangle" aria-hidden="true">&#9654;</span>
+          Play
+        </button>
+
+        <button class="icon-btn" type="button" aria-label="Add to Liked Songs">&#9825;</button>
+        <button class="icon-btn" type="button" aria-label="Add to queue">&#43;</button>
+        <button class="icon-btn" type="button" aria-label="More options">&#8943;</button>
+
+        <span class="action-meta">Updated 2 days ago</span>
+      </div>
+
+      <!-- ---------- TRACK TABLE (Track, Artist, Duration) ---------- -->
+      <section class="table-wrap" aria-labelledby="tracks-heading">
+        <h2 id="tracks-heading" class="visually-hidden">Track listing</h2>
+
+        <table class="track-table">
+          <caption>Midnight Drive &mdash; 10 tracks</caption>
+
+          <thead>
+            <tr>
+              <th scope="col" class="index-cell">#</th>
+              <th scope="col">Track</th>
+              <th scope="col">Artist</th>
+              <th scope="col" class="album-cell">Album</th>
+              <th scope="col" class="duration-cell">Duration</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="index-cell">1</td>
+              <td class="track-name">Neon Skyline</td>
+              <td>Ava Monroe</td>
+              <td class="album-cell">Neon Skyline EP</td>
+              <td class="duration-cell">3:42</td>
+            </tr>
+            <tr>
+              <td class="index-cell">2</td>
+              <td class="track-name">Chrome Hearts</td>
+              <td>The Midnight Run</td>
+              <td class="album-cell">Chrome Hearts</td>
+              <td class="duration-cell">4:05</td>
+            </tr>
+            <tr>
+              <td class="index-cell">3</td>
+              <td class="track-name">Afterglow</td>
+              <td>Kaya Lin</td>
+              <td class="album-cell">Paper Planes</td>
+              <td class="duration-cell">3:18</td>
+            </tr>
+            <tr>
+              <td class="index-cell">4</td>
+              <td class="track-name">Static Bloom</td>
+              <td>VELVET CODE</td>
+              <td class="album-cell">Ghost Frequency</td>
+              <td class="duration-cell">4:27</td>
+            </tr>
+            <tr>
+              <td class="index-cell">5</td>
+              <td class="track-name">Highway 404</td>
+              <td>Ava Monroe</td>
+              <td class="album-cell">Neon Skyline EP</td>
+              <td class="duration-cell">3:56</td>
+            </tr>
+            <tr>
+              <td class="index-cell">6</td>
+              <td class="track-name">City Lights Fade</td>
+              <td>Noah Bennett</td>
+              <td class="album-cell">Long Way Home</td>
+              <td class="duration-cell">4:12</td>
+            </tr>
+            <tr>
+              <td class="index-cell">7</td>
+              <td class="track-name">Ghost Frequency</td>
+              <td>VELVET CODE</td>
+              <td class="album-cell">Ghost Frequency</td>
+              <td class="duration-cell">3:33</td>
+            </tr>
+            <tr>
+              <td class="index-cell">8</td>
+              <td class="track-name">Paper Planes at Dawn</td>
+              <td>Kaya Lin</td>
+              <td class="album-cell">Paper Planes</td>
+              <td class="duration-cell">5:01</td>
+            </tr>
+            <tr>
+              <td class="index-cell">9</td>
+              <td class="track-name">Under Neon Rain</td>
+              <td>The Midnight Run</td>
+              <td class="album-cell">Chrome Hearts</td>
+              <td class="duration-cell">3:47</td>
+            </tr>
+            <tr>
+              <td class="index-cell">10</td>
+              <td class="track-name">Last Exit</td>
+              <td>Ava Monroe</td>
+              <td class="album-cell">Long Way Home</td>
+              <td class="duration-cell">4:18</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </section>
+
+      <!-- ---------- ABOUT + CREDITS ---------- -->
+      <section class="about-grid" aria-label="About this playlist">
+
+        <div class="panel">
+          <h3>About this playlist</h3>
+          <p class="panel-text">
+            Midnight Drive started as a two-track experiment and grew into a full
+            late-night soundtrack. Expect analog synths, reverb-soaked vocals and
+            drum machines that sound like they were recorded in a parking garage.
+          </p>
+          <div class="stats-strip">
+            <div class="stat"><strong>10</strong><span>Tracks</span></div>
+            <div class="stat"><strong>1.2M</strong><span>Plays</span></div>
+            <div class="stat"><strong>4</strong><span>Artists</span></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Credits &amp; details</h3>
+          <!-- Semantic list for credits -->
+          <ul class="credit-list">
+            <li>Curated by <strong>Spotify Clone</strong></li>
+            <li>Cover art direction &mdash; <strong>Neon Studio</strong></li>
+            <li>Mastering &mdash; <strong>Ava Monroe</strong></li>
+            <li>Total runtime &mdash; <strong>40 min 19 sec</strong></li>
+            <li>Last updated &mdash; <strong>2 days ago</strong></li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- ---------- MORE FROM THIS GENRE ---------- -->
+      <section aria-labelledby="more-heading">
+        <div class="section-heading">
+          <h2 id="more-heading">More like this</h2>
+          <a class="section-note" href="browse.html">Browse all &rarr;</a>
+        </div>
+
+        <div class="cards-row">
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-chill.jpg"
+                     alt="Chill Vibes cover: pastel lavender and mint gradient waves">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Chill Vibes</a></h3>
+            <p class="card-meta">Downtempo &middot; 40 songs</p>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-hiphop.jpg"
+                     alt="Concrete Kings cover: gold spray-paint texture on a dark concrete wall">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Concrete Kings</a></h3>
+            <p class="card-meta">Hip-Hop &middot; 33 songs</p>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-workout.jpg"
+                     alt="Power Hour cover: electric lime motion streaks on a dark background">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Power Hour</a></h3>
+            <p class="card-meta">Workout &middot; 21 songs</p>
+          </article>
+
+          <article class="card">
+            <a href="playlist.html">
+              <div class="card-cover">
+                <img src="images/cover-indie.jpg"
+                     alt="Indie Essentials cover: burnt orange and forest green colour blocks">
+                <span class="card-play" aria-hidden="true">&#9654;</span>
+              </div>
+            </a>
+            <h3 class="card-title"><a href="playlist.html">Indie Essentials</a></h3>
+            <p class="card-meta">Indie &middot; 51 songs</p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <p>A DevCamp 2.0 learning project. Built with HTML5 &amp; CSS3 only.</p>
+      </div>
+
+      <div class="footer-column" id="premium">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">For the Record</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="download">
+        <h4>Download</h4>
+        <ul>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">Desktop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Spotify Clone &mdash; a student project for DevCamp 2.0. Not affiliated with Spotify AB.</p>
+      <p><a href="index.html">Home</a> &middot; <a href="browse.html">Browse</a> &middot; <a href="playlist.html">Playlist</a> &middot; <a href="signup.html">Sign up</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
