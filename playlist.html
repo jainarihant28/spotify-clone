@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,19 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Playlist details page of the DevCamp 2.0 Spotify clone — Midnight Drive, with full track listing.">
   <title>Spotify Clone | Midnight Drive — Playlist</title>
-  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  <!-- ============================================================
-       HEADER / NAVBAR
-       ============================================================ -->
+  <!-- HEADER / NAVBAR -->
   <header id="site-header">
     <nav class="navbar" aria-label="Main navigation">
 
-      <a class="brand" href="index.html">
-        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+      <a class="brand" href="./index.html">
+        <img src="./logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
         <span>Spotify</span>
       </a>
 
@@ -28,16 +27,16 @@
       </form>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="browse.html">Browse</a></li>
-        <li><a href="playlist.html" class="active">Playlist</a></li>
-        <li><a href="#premium">Premium</a></li>
-        <li><a href="#support">Support</a></li>
-        <li><a href="#download">Download</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./browse.html">Browse</a></li>
+        <li><a href="./playlist.html" class="active">Playlist</a></li>
+        <li><a href="./index.html#premium">Premium</a></li>
+        <li><a href="./index.html#support">Support</a></li>
+        <li><a href="./index.html#download">Download</a></li>
       </ul>
 
       <div class="nav-actions">
-        <a class="btn btn-ghost" href="signup.html">Sign up free</a>
+        <a class="btn btn-ghost" href="./signup.html">Sign up free</a>
       </div>
 
     </nav>
@@ -46,16 +45,15 @@
   <main>
     <div class="container">
 
-      <!-- ---------- PLAYLIST HERO: cover + title + description ---------- -->
+      <!-- PLAYLIST HERO -->
       <section class="playlist-hero" aria-labelledby="playlist-title">
 
-        <img class="playlist-cover" src="images/cover-midnight.jpg"
+        <img class="playlist-cover" src="./cover-midnight.jpg"
              alt="Midnight Drive playlist cover: glowing pink and cyan light trails receding beneath a deep violet night sky">
 
         <div class="playlist-info">
           <p class="playlist-kind">Public playlist</p>
 
-          <!-- ID selector target (unique to this page) -->
           <h1 id="playlist-title">Midnight Drive</h1>
 
           <p class="playlist-description">
@@ -73,17 +71,16 @@
           </div>
 
           <nav class="filter-row" aria-label="Playlist tags">
-            <a class="filter-chip active" href="browse.html">Synthwave</a>
-            <a class="filter-chip" href="browse.html">Chill</a>
-            <a class="filter-chip" href="browse.html">Night</a>
+            <a class="filter-chip active" href="./browse.html">Synthwave</a>
+            <a class="filter-chip" href="./browse.html">Chill</a>
+            <a class="filter-chip" href="./browse.html">Night</a>
           </nav>
         </div>
 
       </section>
 
-      <!-- ---------- ACTION BAR: styled Play button ---------- -->
+      <!-- ACTION BAR -->
       <div class="action-bar">
-        <!-- Play button is styled but intentionally does nothing (CSS only) -->
         <button class="play-btn" type="button">
           <span class="play-triangle" aria-hidden="true">&#9654;</span>
           Play
@@ -96,7 +93,7 @@
         <span class="action-meta">Updated 2 days ago</span>
       </div>
 
-      <!-- ---------- TRACK TABLE (Track, Artist, Duration) ---------- -->
+      <!-- TRACK TABLE -->
       <section class="table-wrap" aria-labelledby="tracks-heading">
         <h2 id="tracks-heading" class="visually-hidden">Track listing</h2>
 
@@ -185,11 +182,10 @@
               <td class="duration-cell">4:18</td>
             </tr>
           </tbody>
-
         </table>
       </section>
 
-      <!-- ---------- ABOUT + CREDITS ---------- -->
+      <!-- ABOUT + CREDITS -->
       <section class="about-grid" aria-label="About this playlist">
 
         <div class="panel">
@@ -199,6 +195,7 @@
             late-night soundtrack. Expect analog synths, reverb-soaked vocals and
             drum machines that sound like they were recorded in a parking garage.
           </p>
+
           <div class="stats-strip">
             <div class="stat"><strong>10</strong><span>Tracks</span></div>
             <div class="stat"><strong>1.2M</strong><span>Plays</span></div>
@@ -208,7 +205,6 @@
 
         <div class="panel">
           <h3>Credits &amp; details</h3>
-          <!-- Semantic list for credits -->
           <ul class="credit-list">
             <li>Curated by <strong>Spotify Clone</strong></li>
             <li>Cover art direction &mdash; <strong>Neon Studio</strong></li>
@@ -220,59 +216,55 @@
 
       </section>
 
-      <!-- ---------- MORE FROM THIS GENRE ---------- -->
+      <!-- MORE FROM THIS GENRE -->
       <section aria-labelledby="more-heading">
         <div class="section-heading">
           <h2 id="more-heading">More like this</h2>
-          <a class="section-note" href="browse.html">Browse all &rarr;</a>
+          <a class="section-note" href="./browse.html">Browse all &rarr;</a>
         </div>
 
         <div class="cards-row">
           <article class="card">
-            <a href="playlist.html">
+            <a href="./playlist.html">
               <div class="card-cover">
-                <img src="images/cover-chill.jpg"
-                     alt="Chill Vibes cover: pastel lavender and mint gradient waves">
+                <img src="./cover-chill.jpg" alt="Chill Vibes cover: pastel lavender and mint gradient waves">
                 <span class="card-play" aria-hidden="true">&#9654;</span>
               </div>
             </a>
-            <h3 class="card-title"><a href="playlist.html">Chill Vibes</a></h3>
+            <h3 class="card-title"><a href="./playlist.html">Chill Vibes</a></h3>
             <p class="card-meta">Downtempo &middot; 40 songs</p>
           </article>
 
           <article class="card">
-            <a href="playlist.html">
+            <a href="./playlist.html">
               <div class="card-cover">
-                <img src="images/cover-hiphop.jpg"
-                     alt="Concrete Kings cover: gold spray-paint texture on a dark concrete wall">
+                <img src="./cover-hiphop.jpg" alt="Concrete Kings cover: gold spray-paint texture on a dark concrete wall">
                 <span class="card-play" aria-hidden="true">&#9654;</span>
               </div>
             </a>
-            <h3 class="card-title"><a href="playlist.html">Concrete Kings</a></h3>
+            <h3 class="card-title"><a href="./playlist.html">Concrete Kings</a></h3>
             <p class="card-meta">Hip-Hop &middot; 33 songs</p>
           </article>
 
           <article class="card">
-            <a href="playlist.html">
+            <a href="./playlist.html">
               <div class="card-cover">
-                <img src="images/cover-workout.jpg"
-                     alt="Power Hour cover: electric lime motion streaks on a dark background">
+                <img src="./cover-workout.jpg" alt="Power Hour cover: electric lime motion streaks on a dark background">
                 <span class="card-play" aria-hidden="true">&#9654;</span>
               </div>
             </a>
-            <h3 class="card-title"><a href="playlist.html">Power Hour</a></h3>
+            <h3 class="card-title"><a href="./playlist.html">Power Hour</a></h3>
             <p class="card-meta">Workout &middot; 21 songs</p>
           </article>
 
           <article class="card">
-            <a href="playlist.html">
+            <a href="./playlist.html">
               <div class="card-cover">
-                <img src="images/cover-indie.jpg"
-                     alt="Indie Essentials cover: burnt orange and forest green colour blocks">
+                <img src="./cover-indie.jpg" alt="Indie Essentials cover: burnt orange and forest green colour blocks">
                 <span class="card-play" aria-hidden="true">&#9654;</span>
               </div>
             </a>
-            <h3 class="card-title"><a href="playlist.html">Indie Essentials</a></h3>
+            <h3 class="card-title"><a href="./playlist.html">Indie Essentials</a></h3>
             <p class="card-meta">Indie &middot; 51 songs</p>
           </article>
         </div>
@@ -281,14 +273,12 @@
     </div>
   </main>
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
+  <!-- FOOTER -->
   <footer id="site-footer">
     <div class="footer-inner">
 
       <div class="footer-brand">
-        <img src="images/logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
+        <img src="./logo.svg" alt="Spotify clone logo: a green circle with three sound waves">
         <p>A DevCamp 2.0 learning project. Built with HTML5 &amp; CSS3 only.</p>
       </div>
 
@@ -304,9 +294,9 @@
       <div class="footer-column" id="support">
         <h4>Support</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="browse.html">Browse</a></li>
-          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./browse.html">Browse</a></li>
+          <li><a href="./signup.html">Sign up</a></li>
         </ul>
       </div>
 
@@ -332,7 +322,12 @@
 
     <div class="footer-bottom">
       <p>&copy; 2026 Spotify Clone &mdash; a student project for DevCamp 2.0. Not affiliated with Spotify AB.</p>
-      <p><a href="index.html">Home</a> &middot; <a href="browse.html">Browse</a> &middot; <a href="playlist.html">Playlist</a> &middot; <a href="signup.html">Sign up</a></p>
+      <p>
+        <a href="./index.html">Home</a> &middot;
+        <a href="./browse.html">Browse</a> &middot;
+        <a href="./playlist.html">Playlist</a> &middot;
+        <a href="./signup.html">Sign up</a>
+      </p>
     </div>
   </footer>
 
